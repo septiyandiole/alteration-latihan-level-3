@@ -18,7 +18,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <?php echo form_open(); ?>
+                            <?php echo form_open_multipart(); ?>
                                 <div class="form-group">
                                     <label>Nama Produk</label>
                                     <input class="form-control" placeholder="Nama Produk" name="nama"value="<?php echo $nama ; ?>">
@@ -33,6 +33,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Input Gambar</label>
+                                        <img src="<?php echo base_url('/uploads/'.$gambar);?>">
+                                    <input type="hidden" name="gambar_hidden" value="<?php echo $gambar; ?>">
                                     <input type="file" name="gambar">
                                 </div>
                                 <div class="form-group">

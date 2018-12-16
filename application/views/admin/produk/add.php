@@ -16,7 +16,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <?php echo form_open(); ?>
+                            <?php echo form_open_multipart(); ?>
                                 <div class="form-group">
                                     <label>Nama Produk</label>
                                     <input class="form-control" placeholder="Nama Produk" id="nama" name="nama">
