@@ -1,0 +1,10 @@
+Table Produk = 
+	ID(PK int(11)), 
+	Nama(Varchar(50)), 
+	Harga(int(8)), 
+	Deskripsi(text), 
+	Gambar(Varchar(100)), 
+	Stok(int(5), 
+	tgl_upload(timestamp)
+
+PR: Tampilin data dari add
