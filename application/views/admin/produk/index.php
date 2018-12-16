@@ -10,6 +10,7 @@
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
+            <a class="btn btn-primary" href="<?php echo base_url('/index.php/admin/produk/add/');?>">Add</a><br><br>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     DataTables Advanced Tables
@@ -19,23 +20,32 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                         <thead>
                             <tr>
+                                <th>Id</th>
                                 <th>Nama</th>
                                 <th>Harga</th>
                                 <th>Deskripsi</th>
                                 <th>Gambar</th>
                                 <th>Stok</th>
                                 <th>Tanggal Upload</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach ($produk as $key => $value) : ?>
                             <tr class="odd gradeX">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="center"></td>
-                                <td class="center"></td>
-                                <td class="center"></td>
+                                 <td><?php echo $value->id; ?></td>
+                                <td><?php echo $value->nama; ?></td>
+                                <td><?php echo $value->harga; ?></td>
+                                <td><?php echo $value->deskripsi; ?></td>
+                                <td class="center"><?php echo $value->gambar ?></td>
+                                <td class="center"><?php echo $value->stok; ?></td>
+                                <td class="center"><?php echo $value->tgl_upload; ?></td>
+                                <td>
+                                    <a class="btn btn-success" href="<?php echo base_url('/index.php/admin/produk/update/' . $value->id) ; ?>">Edit</a>
+                                    <a class="btn btn-danger" href="<?php echo base_url('/index.php/admin/produk/delete/' . $value->id) ; ?>">Delete</a>
+                                </td>
                             </tr>
+                            <?php endforeach ; ?>
                         </tbody>
                     </table>
                     <!-- /.table-responsive -->

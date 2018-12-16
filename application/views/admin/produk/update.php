@@ -18,30 +18,30 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <form role="form">
+                            <?php echo form_open(); ?>
                                 <div class="form-group">
                                     <label>Nama Produk</label>
-                                    <input class="form-control" placeholder="Nama Produk" value="<?php echo $nama_produk ?>">
+                                    <input class="form-control" placeholder="Nama Produk" name="nama"value="<?php echo $nama ; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>Harga Produk</label>    
-                                    <input class="form-control" placeholder="Harga Produk" value="<?php echo $harga_produk ?>">
+                                    <input class="form-control" placeholder="Harga Produk" name="harga" value="<?php echo $harga ; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label>Deskripsi Produk</label>
-                                    <textarea class="form-control" rows="3"><?php echo $deskripsi ?></textarea>
+                                    <textarea class="form-control" rows="3" name="deskripsi"><?php echo $deskripsi ; ?></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>Input Gambar</label>
-                                    <input type="file">
+                                    <input type="file" name="gambar">
                                 </div>
                                 <div class="form-group">
                                     <label>Stok Produk</label>    
-                                    <input class="form-control" placeholder="Stok Produk" value="<?php echo $stok ?>">
+                                    <input class="form-control" placeholder="Stok Produk" name="stok"value="<?php echo $stok ; ?>">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit Button</button>
                                 <button type="reset" class="btn btn-success">Reset Button</button>
-                            </form>
+                            <?php echo form_close(); ?>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
