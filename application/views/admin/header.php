@@ -284,6 +284,7 @@
                         </li>
                         <li>
                             <a href="<?php echo base_url('index.php/admin/produk/index') ?>"    ><i class="fa fa-dashboard fa-fw"></i> Data Produk</a>
+                            <a href="<?php echo base_url('index.php/admin/kategori/index') ?>"    ><i class="fa fa-dashboard fa-fw"></i> Data Kategori</a>
                         </li>
                     </ul>
                 </div>

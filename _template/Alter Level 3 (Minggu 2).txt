@@ -8,3 +8,11 @@ Table Produk =
 	tgl_upload(timestamp)
 
 PR: Tampilin data dari add
+
+16 Desember 2018 :
+- Tugas buat fitur kategori
+  isinya ID, NAMA, SLUG (Nama yang tidak boleh mengandung spasi), cover
+
+29 Desember 2018 :
+- Tugas buat tabel user_login
+- Buat menu login user di homepage
