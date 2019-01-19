@@ -20,10 +20,12 @@
                                 <div class="form-group">
                                     <label>Nama Produk</label>
                                     <input class="form-control" placeholder="Nama Produk" id="nama" name="nama">
+                                    <?php echo form_error('nama', '<p class="help-block">', '</p>'); ?>
                                 </div>
                                 <div class="form-group">
                                     <label>Harga Produk</label>    
                                     <input class="form-control" placeholder="Harga Produk" id="harga" name="harga">
+                                    <?php echo form_error('harga', '<p class="help-block">', '</p>'); ?>
                                 </div>
                                 <div class="form-group">
                                     <label>Deskripsi Produk</label>

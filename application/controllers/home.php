@@ -20,6 +20,7 @@ class Home extends CI_Controller {
 		$produk = $this->produk_model->get();
 		$kategori = $this->kategori_model->get();
 		$data =[
+			'username'=> $this->session->userdata('username'),
 			'produk' => $produk,
 			'kategori' => $kategori
 		];

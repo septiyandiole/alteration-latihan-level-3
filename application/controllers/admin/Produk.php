@@ -26,7 +26,44 @@ class Produk extends CI_Controller {
 	{
 		$this->load->model('produk_model');
 
-        if ($this->input->server('REQUEST_METHOD') == 'POST')
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules(
+        	'nama',
+         	'Nama Produk', 
+         	'required',
+         	array(
+         		'required' => '{field} harus diisi',
+         	)	
+        );
+        $this->form_validation->set_rules(
+        	'harga',
+         	'Harga Produk', 
+         	'required',
+         	array(
+         		'required' => '{field} harus diisi',
+         	)	
+        );
+
+        $this->form_validation->set_rules(
+        	'deskripsi',
+         	'Deskripsi Produk', 
+         	'required|min_length[10]',
+         	array(
+         		'required' => '{field} harus diisi',
+         		'min_length' => '{field} harus lebih dari 10 karakter'
+         	)	
+        );
+
+          $this->form_validation->set_rules(
+        	'harga',
+         	'Harga Produk', 
+         	'required',
+         	array(
+         		'required' => '{field} harus diisi',
+         	)	
+        );
+
+        if ($this->form_validation->run() == TRUE)
         {
             $nama = $this->input->post('nama');  /*sama dengan $_POST['nama']*/
             $harga = $this->input->post('harga');
