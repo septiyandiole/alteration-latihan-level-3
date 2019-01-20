@@ -56,7 +56,7 @@
                   </div>
                   <div class="card-footer">
                     <button class="btn btn-sm btn-primary">Lihat</button>
-                    <button class="btn btn-sm btn-success">Tambah ke Keranjang</button>
+                    <button class="btn btn-sm btn-success">Beli</button>
                   </div>
                 </div>
               </div>

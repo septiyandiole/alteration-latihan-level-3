@@ -59,4 +59,4 @@ class kategori_model extends CI_Model
 	}
 
 }
- ?>
+?>

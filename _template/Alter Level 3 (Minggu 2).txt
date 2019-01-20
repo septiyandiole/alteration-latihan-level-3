@@ -16,3 +16,10 @@ PR: Tampilin data dari add
 29 Desember 2018 :
 - Tugas buat tabel user_login
 - Buat menu login user di homepage
+
+19 Januari 2019 :
+- Ubah button tambah keranjang menjadi beli
+- ketika pengguna klik beli, maka ditambahkan ke table order
+- struktur table order = id_order, username, id_produk, tanggal_order
+- yg ditampilkan id_order, username, nama_produk, tanggal_order
+- Buat halaman order

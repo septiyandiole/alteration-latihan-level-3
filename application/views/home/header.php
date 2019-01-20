@@ -41,7 +41,7 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="home_login">Login</a>
+              <a class="nav-link" href="<?php echo base_url('/index.php/home_login');?>">Login</a>
             </li>
             <?php if ($username): ?>
             <li class="nav-item dropdown">

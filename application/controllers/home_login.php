@@ -24,11 +24,45 @@ class home_login extends CI_Controller {
 			$this->load->view('home/login');
 		}
 	}
+	public function daftar()
+	{
+		$this->load->model('home_daftar_model');
+
+		$this->load->library('form_validation');
+        $this->form_validation->set_rules(
+        	'username',
+         	'Username', 
+         	'required',
+         	array(
+         		'required' => '{field} harus diisi',
+         	)	
+        );
+
+        $this->form_validation->set_rules(
+        	'password',
+         	'Password', 
+         	'required',
+         	array(
+         		'required' => '{field} harus diisi',
+         	)	
+        );
+
+        if ($this->form_validation->run() == TRUE)
+        {
+            $username = $this->input->post('username');  /*sama dengan $_POST['username']*/
+            $password = $this->input->post('password');
+
+			$this->home_daftar_model->daftar($username, $password);
+			redirect('home_login');
+		}
+
+		$this->load->view('home/daftar');
+	}
 	public function logout()
 	{
 		$this->session->unset_userdata('username');
 		{
-			redirect('home_login');
+			redirect('home/index');
 		}
 	}
 	private function check_login()
