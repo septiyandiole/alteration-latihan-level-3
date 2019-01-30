@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		
+
 
 		$produk = $this->produk_model->get();
 		$kategori = $this->kategori_model->get();
@@ -21,6 +21,9 @@ class Home extends CI_Controller {
 			'produk' => $produk,
 			'kategori' => $kategori
 		];
+
+
+
 
 		$this->load->view('home/index', $data);
 	}
@@ -31,7 +34,7 @@ class Home extends CI_Controller {
 
 		print_r($get_detail_produk);die;
 
-		
+
 
 	}
 
