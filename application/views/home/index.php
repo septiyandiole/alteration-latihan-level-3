@@ -55,8 +55,8 @@
                     <p class="card-text"><?php echo $value->deskripsi; ?></p>
                   </div>
                   <div class="card-footer">
-                    <button class="btn btn-sm btn-primary">Lihat</button>
-                    <button class="btn btn-sm btn-success">Beli</button>
+                    <a class="btn btn-sm btn-primary" href="#">Lihat</a>
+                    <a class="btn btn-sm btn-success" href="<?php echo base_url('/index.php/home/order/' . $value->id) ; ?>">Beli</a>
                   </div>
                 </div>
               </div>
