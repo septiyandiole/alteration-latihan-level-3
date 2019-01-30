@@ -15,6 +15,9 @@ class Home extends CI_Controller {
 			'produk' => $produk,
 			'kategori' => $kategori
 		];
+		
+		
+		
 
 		$this->load->view('home/index', $data);
 	}
