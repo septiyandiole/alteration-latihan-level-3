@@ -56,7 +56,7 @@
                   </div>
                   <div class="card-footer">
                     <a class="btn btn-sm btn-primary" href="#">Lihat</a>
-                    <a class="btn btn-sm btn-success" href="<?php echo base_url('/index.php/home/order/' . $value->id) ; ?>">Beli</a>
+                    <a class="btn btn-sm btn-success" href="<?php echo base_url('/index.php/order/detail/' . $value->id) ; ?>">Beli</a>
                   </div>
                 </div>
               </div>

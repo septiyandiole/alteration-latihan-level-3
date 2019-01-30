@@ -23,3 +23,9 @@ PR: Tampilin data dari add
 - struktur table order = id_order, username, id_produk, tanggal_order
 - yg ditampilkan id_order, username, nama_produk, tanggal_order
 - Buat halaman order
+
+
+1-pilih
+2-detail
+3-order
+4-
