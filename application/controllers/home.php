@@ -9,7 +9,6 @@ class Home extends CI_Controller {
 		$this->load->model('kategori_model');
     }
 
-
 	public function index()
 	{
 	
@@ -23,9 +22,4 @@ class Home extends CI_Controller {
 
 		$this->load->view('home/index', $data);
 	}
-
-
-
-
-
 }
