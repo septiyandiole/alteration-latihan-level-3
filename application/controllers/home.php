@@ -12,8 +12,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		
-
+	
 		$produk = $this->produk_model->get();
 		$kategori = $this->kategori_model->get();
 		$data =[

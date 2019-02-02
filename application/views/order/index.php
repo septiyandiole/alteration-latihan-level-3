@@ -5,35 +5,36 @@
 
       <div class="row">
 
-
-          <!-- /.row -->
           <div class="col-sm-12">
 
-
-
-
-
-              <div class="col-lg-6"
-              <div class="col-sm-12">
-
-                  <img src="<?php echo base_url('/uploads/'.$produk->gambar);?>">
-              </div>
-              </div>
-              <div class="col-lg-6">
-                      <label>Nama Produk : <?php echo $produk->nama ; ?></label>
-                      <label>Harga Produk : <?php echo $produk->harga ; ?> </label>
-                      <label>Deskripsi Produk : <?php echo $produk->deskripsi ; ?></label>
-                      <label>Stok Produk : <?php echo $produk->stok ; ?></label>
-                        <button type="submit" class="btn btn-primary"> Order </button>
-              </div>
-
               <?php echo form_open_multipart(); ?>
-
-                  <?php echo form_close(); ?>
+                  <div class="form-group">
+                      <label>Nama Produk</label>
+                      <input class="form-control" placeholder="Nama Produk" name="nama"value="<?php echo $nama ; ?>">
+                  </div>
+                  <div class="form-group">
+                      <label>Harga Produk</label>
+                      <input class="form-control" placeholder="Harga Produk" name="harga" value="<?php echo $harga ; ?>">
+                  </div>
+                  <div class="form-group">
+                      <label>Deskripsi Produk</label>
+                      <textarea class="form-control" rows="3" name="deskripsi"><?php echo $deskripsi ; ?></textarea>
+                  </div>
+                  <div class="form-group">
+                      <label>Input Gambar</label>
+                      <img src="<?php echo base_url('/uploads/'.$gambar);?>">
+                      <input type="hidden" name="gambar_hidden" value="<?php echo $gambar; ?>">
+                      <input type="file" name="gambar">
+                  </div>
+                  <div class="form-group">
+                      <label>Stok Produk</label>
+                      <input class="form-control" placeholder="Stok Produk" name="stok"value="<?php echo $stok ; ?>">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit Button</button>
+                  <button type="reset" class="btn btn-success">Reset Button</button>
+              <?php echo form_close(); ?>
 
           </div>
-
-        </div>
         <!-- /.col-lg-9 -->
 
       </div>
