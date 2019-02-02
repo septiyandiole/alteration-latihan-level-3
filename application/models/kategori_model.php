@@ -2,7 +2,7 @@
 /**
  * 
  */
-class kategori_model extends CI_Model
+class Kategori_model extends CI_Model
 {
 	public $id;
 	public $nama;

@@ -1,6 +1,6 @@
 <?php 
 
-class home_order_model extends CI_Model
+class Home_order_model extends CI_Model
 {
 	public $id_order;
 	public $username;

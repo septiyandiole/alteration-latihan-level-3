@@ -2,7 +2,7 @@
 /**
  * 
  */
-class home_daftar_model extends CI_Model
+class Home_daftar_model extends CI_Model
 {
 
 	public function daftar($username, $password)
